@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta charset = "utf-8">
+        <meta name="author" content="Nastasia Vanderperren">
+        <link href="../css/reset_brower_styles.css" type="text/css" rel="stylesheet">
+        <link href="../css/stylesheet.css" type="text/css" rel="stylesheet">
+        <title>Contactformulier</title>
+    </head>
+    
+    <body>
+        <div class="page">
+            
+        <header>
+            <h1>Portfolio Nastasia Vanderperren</h1>
+            <nav>
+                <a href="#"><img src="../images/menu_background/menu_mobile.png" id="menu" alt="menu" /></a>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="over-mij.html">Over mij</a></li>
+                    <li><a href="i1Talent.html">I1Talent</a></li>
+                    <li><a href="CV.html">CV</a></li>
+                    <li><a href="realisaties.html">Realisaties</a></li>
+                    <li><a href="hobby-s.html">Hobby's</a></li>
+                    <li><a href="links.html">Links</a></li>
+                    <li><a href="contact.html">Contactformulier</a></li>
+                </ul>
+            </nav>
+        </header>
+            
+        <div id="contact-wrapper" class="wrapper">
+            
+            <section id="contact-form">
+                <h2>Contactformulier</h2>
+                
+                <form id=Nastasia-portfolio-contact action="mailto:ik.ben.nas@gmail.com?subject=Contactformulier-portfolio" method="post" enctype="text/plain">
+                    <fieldset>
+                        <legend>Contacteer mij</legend>
+                        <label for="voornaam">Voornaam: </label>
+                        <input type="text" name="voornaam" id="voornaam" class="invoer" required/>
+                        <label for="achternaam">Achternaam: </label>
+                        <input type="text" name="achternaam" id="achternaam" class="invoer" required />
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email" class="invoer" required />
+                        <label for="bedrijf">Bedrijf: </label>
+                        <input type="text" name="bedrijf" id="bedrijf" class="invoer"/>
+                        <label for="bericht">Bericht: </label>
+                        <textarea name="bericht" id="bericht" class="invoer"  placeholder="Laat mij iets weten" required></textarea>
+                        <br />
+                        <input type="submit" name="submit" value="verzend" id="submit"/>
+                    </fieldset>
+                </form>
+            </section>
+            
+            <aside>
+                <h2>Meer info</h2>
+                <p>Dit online portfolio werd gemaakt door Nastasia Vanderperren als opdracht voor het vak Webapplicaties I (HoGent, 2015-2016).</p><p>Deze website zal gebruikt worden doorheen mijn opleiding als informaticus voor de verschillende modules van het vak Webapplicaties en i1Talent.</p>
+            </aside>
+        </div>
+            
+        <footer><p>&copy; Nastasia Vanderperren 2015</p></footer>
+        
+        </div>
+    </body>
+</html>
