@@ -271,7 +271,17 @@ input[submit]:focus {
 .inline {
     float: left;
     margin-right: 1em;
-    ;
+}
+
+#hobby-sectie h3 {
+    display: block
+}
+
+
+/* 1.5 REALISATIES */
+
+.kolom1 h3 {
+    display: block
 }
 
 

@@ -1,63 +1,108 @@
 <!DOCTYPE html>
 <html>
-    <head>
-         <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <meta charset = "utf-8">
-        <meta name="author" content="Nastasia Vanderperren">
-        <link href="../css/reset_brower_styles.css" type="text/css" rel="stylesheet">
-        <link href="../css/stylesheet.css" type="text/css" rel="stylesheet">
-        <title>Realisaties</title>
-    </head>
-    
-    <body>
-        <div class="page">
-        
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta charset="utf-8">
+    <meta name="author" content="Nastasia Vanderperren">
+    <link href="../css/reset_brower_styles.css" type="text/css" rel="stylesheet">
+    <link href="../css/stylesheet.css" type="text/css" rel="stylesheet">
+    <title>Realisaties</title>
+</head>
+
+<body>
+    <div class="page">
+
         <header>
-            <h1>Portfolio Nastasia Vanderperren</h1>
+            <h1>Nastasia Vanderperren</h1>
             <nav>
-                <a href="#"><img src="../images/menu_background/menu_mobile.png" id="menu" alt="menu" /></a>
+                <a href="#"><img src="images/menu_background/menu_mobile.png" id="menu" alt="menu" /></a>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="over-mij.html">Over mij</a></li>
-                    <li><a href="i1Talent.html">I1Talent</a></li>
                     <li><a href="CV.html">CV</a></li>
                     <li><a href="realisaties.html">Realisaties</a></li>
                     <li><a href="hobby-s.html">Hobby's</a></li>
-                    <li><a href="links.html">Links</a></li>
                     <li><a href="contact.html">Contactformulier</a></li>
                 </ul>
             </nav>
         </header>
-            
+
+
         <div id="realisaties-wrapper">
-            
+
             <section>
                 <h2>Realisaties</h2>
-                <p>Hier kan je al mijn realisaties vinden</p>
+                <p>
+                    <ul>
+                        <li><a href="#iiif">Koninklijk Museum voor Schone Kunsten Antwerpen: IIIF en Catmandu</a></li>
+                        <li><a href="#reslab">Resurrection Lab</a></li>
+                        <li><a href="#breakoutboxclient">BreakOutBoxClient</a></li>
+                        <li><a href="#spilvarken">Website Draaiboeken van Het Spilvarken</a></li>
+                        <li><a href="#bijgaardehof">Website Het Bijgaardehof</a></li>
+                    </ul>
+                </p>
                 <article class="kolom1">
-                    <h3>Bootstrap</h3>
-                    <figure><img src="../images/realisaties/probeersel-met-bootstrap.jpg" / al="website met bootstrap"><figcaption>Probeersel met bootstrap</figcaption></figure>
+                    <h3 id="iiif">Koninklijk Museum voor Schone Kunsten Antwerpen: IIIF en Catmandu</h3>
+                    <p>IIIF is een standaard-in-wording voor de online uitwisseling en presentatie van beelden binnen de cultureel-erfgoedsector. Catmandu is een tool om gestructureerde metadata in een andere vorm te gieten. Ik schreef een script om de metadata en afbeeldingen van honderd kunstwerken van KMKSA in een CSV-bestand om te zetten naar honderd IIIF-manifests via Catmandu. <a href="https://github.com/PACKED-vzw/IIIF-kmska-fix">Bekijk het script op GitHub</a>. <a href="https://www.projectcest.be/wiki/Publicatie:Opzetten_IIIF_beeldenserver_en_een_eenvoudige_webportaal">Lees het volledige verslag op CEST</a></p>
+                    <figure><img src="../images/realisaties/kmska_1.png" alt="Mirador">
+                        <figcaption>Een overzicht van beelden in de Mirador viewer</figcaption>
+                    </figure>
+                    <figure><img src="../images/realisaties/kmska_2.png" alt="Detail beeld">
+                        <figcaption>Het is mogelijk om op de beelden in te zoomen en informatie over het schilderij te krijgen</figcaption>
+                    </figure>
+                    <figure><img src="../images/realisaties/kmska_3.png" alt="Mirador">
+                        <figcaption>Beelden uit verschillende collecties kunnen via IIIF in eenzelfde viewer bekeken worden</figcaption>
+                    </figure>
+
+
                 </article>
                 <article class="kolom1">
-                    <h3>Codecademy</h3>
-                    <figure><img src="../images/realisaties/website-over-mij.jpg" alt="website met Codecademy"/><figcaption>Een website bestaande uit een pagina. Dit werd gemaakt via Codecademy</figcaption></figure>
+                    <h3 id="reslab">Resurrection Lab</h3>
+                    <p>Resurrection Lab is een tweejarig onderzoeksproject van PACKED vzw en iMAL. Het wil een bijdrage leveren aan het opvullen van het hiaat dat vandaag bestaat m.b.t. de expertise over de preservering van born-digital kunstwerken en het gebruik van emulatie. In kader van dit onderzoeksproject werd data gecapteerd van 3,5" en 5,25" diskettes van resp. Liberaal Archief en ADVN. Hiervoor schreef ik twee scriptjes om het capteerproces te automatiseren. <a href="https://github.com/PACKED-vzw/ResurrectionLab">Bekijk de scripts op GitHub.</a></p>
+                    <figure><img src="../images/realisaties/reslab.jpg" alt="Resurrection Lab" />
+                        <figcaption>Een opstelling om data van obsolete dragers te capteren.</figcaption>
+                    </figure>
+                </article>
+
+                <article class="kolom1">
+                    <h3 id="breakoutboxclient">BreakOutBoxClient</h3>
+                    <p>In het kader van het vak 'Projecten II' heb ik samen met twee andere studenten een .NET-applicatie gemaakt om leerlingen spelenderwijs een sessie van oefeningen en acties te laten spelen. De app bestond uit twee delen: enerzijds het spelgedeelte waar de leerlingen zich kunnen inschrijven voor een groepje en de sessie kunnen spelen; anderzijds het admingedeelte waar de leerkracht een sessie kan starten en het verloop van het spel kan volgen.</p>
+                    <figure><img src="../images/realisaties/projecten_2_1.png" alt="BreakOutBoxClient" />
+                        <figcaption>Het beginscherm. Leerlingen kunnen met een sessiecode naar hun sessie gaan; leerkrachten kunnen naar het adminscherm gaan door in te loggen.</figcaption>
+                    </figure>
+                    <figure><img src="../images/realisaties/projecten_2_2.png" alt="BreakOutBoxClient" />
+                        <figcaption>Het adminscherm waar de leerkracht het verloop van de sessie kan volgen.</figcaption>
+                    </figure>
+                </article>
+
+                <article class="kolom1">
+                    <h3 id="spilvarken">Website Draaiboeken van Het Spilvarken</h3>
+                    <p><a href="http://www.spilvarken.be/draaiboek">Op deze </a> kan je draaiboeken vinden om zelf in je buurt spilvarkens te zetten. De website werd opgezet en gevuld door mij en de andere leden van de Raad van Bestuur. Het maken van de website kaderde in het project Duurzame Wijken van Stad Gent.</p>
+                    <figure><img src="../images/realisaties/spilvarken.png" alt="Draaiboeken Het Spilvarken" />
+                    </figure>
                 </article>
                 <article class="kolom1">
-                    <h3>Heelal in HTML/CSS</h3>
-                    <figure><img src="../images/realisaties/html-art.jpg" alt="heelal via html"/><figcaption>Een eenvoudige tekening van het heelal gemaakt in HTML5 en CSS3</figcaption></figure>
-                </article>
-                <article class="kolom1">
-                    <h3>Het Spilvarken</h3>
-                    <figure><img src="../images/realisaties/spilvarken-probeersel-2.jpg" alt="website voor Het Spilvarken"/><figcaption>Oefenen met HTML en CSS</figcaption></figure>
+                    <h3 id="bijgaardehof">Website Het Bijgaardehof</h3>
+                    <p><a href="https://bijgaardehof.be">Deze website</a> werd gecreëerd door de themagroep 'Buurt' van de cohousingsgroepen De Wijgaard, De Spore en De Biotope.</p>
+                    <figure><img src="../images/realisaties/bijgaardehof.png" alt="Website Bijgaardehof" />
+                    </figure>
                 </article>
             </section>
             <aside>
                 <h2>Meer info</h2>
-                <p>Dit online portfolio werd gemaakt door Nastasia Vanderperren als opdracht voor het vak Webapplicaties I (HoGent, 2015-2016).</p> <p>Deze website zal gebruikt worden doorheen mijn opleiding als informaticus voor de verschillende modules van het vak Webapplicaties en i1Talent.</p>
+                <p>Dit online portfolio werd gemaakt door Nastasia Vanderperren als opdracht voor het vak Webapplicaties I (HoGent, 2015-2016).</p>
+                <p><a href="https://be.linkedin.com/in/nastasia-vanderperren-563a3140"><i class="fa fa-linkedin-square" style="font-size:3em;"></i></a>
+                    <a href="https://www.github.com/nvanderperren"><i class="fa fa-github" style="font-size:3em;"></i></a></p>
+
             </aside>
         </div>
-        <footer><p>&copy; Nastasia Vanderperren 2015</p></footer>
-        </div>
-    </body>
+        <footer>
+            <p>&copy; Nastasia Vanderperren 2018</p>
+        </footer>
+    </div>
+</body>
+
 </html>
