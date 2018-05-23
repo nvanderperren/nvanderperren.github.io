@@ -1,13 +1,24 @@
 /* first mobile responsive
 start met algemene opmaak van headers etc. */
 
+
 /* 1. ALGEMENE INSTELLINGEN */
 
 * {
     font-family: 'Titillium Web', Verdana, Courier, sans-serif;
 }
 
-header, nav, body, footer, section, article, aside, figure, .wrapper, .page, div{
+header,
+nav,
+body,
+footer,
+section,
+article,
+aside,
+figure,
+.wrapper,
+.page,
+div {
     box-sizing: border-box;
 }
 
@@ -17,18 +28,17 @@ body {
     background-color: #fff;
     line-height 1.2;
     color: #333300;
-    
 }
 
-.page{
+.page {
     background-image: url(../images/menu_background/upfeathers.png);
-    background-repeat:repeat;
+    background-repeat: repeat;
     padding: 1em;
     margin: 0.5em;
     border: 1px black dashed;
 }
 
-header{
+header {
     background-image: url(../images/menu_background/green_cup.png);
     background-repeat: repeat;
     margin: -1em -1em 0em -1em;
@@ -36,59 +46,61 @@ header{
     border-bottom: 1px black dashed;
 }
 
+
 /* nav */
 
-nav ul{
+nav ul {
     text-align: center;
     list-style-type: none;
     display: none;
 }
 
-nav li{
+nav li {
     padding: 0.2em 0.9em;
     border: 1px black solid;
     margin: 0.1em 1em;
     font-size: 1em;
 }
 
-nav li:hover{
+nav li:hover {
     background-color: orange;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #111;
 }
 
-nav a:hover{
+nav a:hover {
     color: #111;
 }
 
-.wrapper{
+.wrapper {
     margin-top: 1.5em;
 }
 
-.wrapper *{
+.wrapper * {
     text-align: left;
 }
 
+
 /* lettergroottes headings en teksten */
 
-h1{
+h1 {
     font-size: 1.7em;
     text-align: center;
     padding: 0.3em 0;
     text-transform: uppercase;
 }
 
-h2{
+h2 {
     font-size: 1.4em;
     padding: 0.2em 0.25em;
     opacity: 0.7;
     text-transform: uppercase;
 }
 
-h3{
+h3 {
     font-size: 1.2em;
     font-weight: lighter;
     background-image: url(../images/menu_background/green_cup.png);
@@ -97,63 +109,73 @@ h3{
     margin-bottom: .7em;
 }
 
-h4{
+h4 {
     font-size: 1.1em;
     padding: 0.5em;
 }
 
-p, figcaption{
+p,
+figcaption {
     font-size: 1em;
-    text-align:left;
+    text-align: left;
     padding: 0.5em 0.7em;
 }
 
-article{
+article {
     margin: 0.5em auto;
     padding: 0.3em;
 }
 
-.index{
+.talen {
+    margin: 0em auto !important;
+    padding: 0em auto !important;
+    font-size: 0.9em;
+    float: right;
+}
+
+.index {
     margin: 0.5em auto !important;
     padding: 0.7em !important;
 }
 
-.niet-home{
-    padding: 1em 0.7em;   
+.niet-home {
+    padding: 1em 0.7em;
 }
 
-article ul, section ul{
+article ul,
+section ul {
     list-style-position: inside;
     padding: 0.5em 0.7em 1em;
 }
 
-article li, section li{
+article li,
+section li {
     font-size: 1em;
     padding: 0.3em 0.7em;
 }
 
-aside p{
+aside p {
     margin-top: 0.7em;
 }
 
-a{
+a {
     color: black;
 }
 
-a:hover{
+a:hover {
     color: darkorange;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-footer{
+footer {
     background-image: url("../images/menu_background/green_cup.png");
-    margin: 1em -1em -1em; 
+    margin: 1em -1em -1em;
 }
 
-footer p{
+footer p {
     text-align: center;
     padding: 1.3em;
     margin-top: 1em;
@@ -166,9 +188,19 @@ footer p{
 
 /* ARTIKELS: TEKST LATEN VERSCHIJNEN OP FOTO'S BIJ HOVEREN (INDEX-PAGINA)*/
 
-.index:hover p.text-articles{
+.index:hover p.text-articles {
     display: block;
     margin-bottom: -5.17em;
+}
+
+#home-wrapper h2,
+h3,
+h4 {
+    display: none
+}
+
+#home-wrapper aside h2 {
+    display: block
 }
 
 p.text-articles {
@@ -179,188 +211,168 @@ p.text-articles {
     text-align: center;
     padding: 2em 0em;
     font-size: 1.5em;
-    opacity: 0.9; 
+    opacity: 0.9;
 }
 
-p.text-articles a{
+p.text-articles a {
     text-decoration: none;
     color: #fff;
 }
 
 
-
 /* 1.2 I1TALENT-PAGINA */
 
-video{
+video {
     max-width: 100%;
 }
 
 
-
 /* 1.3 FORMULIER CONTACTPAGINA */
 
-fieldset{
+fieldset {
     border-radius: 5px;
     width: 70%;
     margin: 2em 10% 2em;
 }
 
-legend{
-    text-transform: uppercase;    
+legend {
+    text-transform: uppercase;
 }
 
-.invoer{
+.invoer {
     border-radius: 5px;
     width: 80%;
     margin: 0.5em 0;
     display: block;
 }
 
-.invoer:focus{
+.invoer:focus {
     background-color: #FFCC00;
 }
 
-label{
+label {
     display: block;
     margin: 0.7em 0 0.5em;
 }
 
-textarea{
+textarea {
     height: 80px;
     width: 200px;
 }
 
 input[submit]:hover,
-input[submit]:focus{
-    background-color: #FFCC00
-    cursor:pointer;
+input[submit]:focus {
+    background-color: #FFCC00 cursor: pointer;
 }
+
 
 /* 1.4 FOTO'S OP HOBBYPAGINA */
 
-.inline{
+.inline {
     float: left;
-    margin-right: 1em;;
+    margin-right: 1em;
+    ;
 }
+
 
 /* 2. MOBIEL */
 
+
 /* 2.1 MOBIEL NAV*/
 
-nav:hover ul{
-   display: block; 
+nav:hover ul {
+    display: block;
 }
+
 
 /* 2.2 AANTAL ARTIKELS VERMINDEREN OP SCHERM */
 
-#hobby, #contact{
+#hobby,
+#contact {
     display: none;
 }
 
 
 /* 3. TABLET */
 
-@media screen and (min-width: 480px){
-    
-    
+@media screen and (min-width: 480px) {
     /* 3.1 ALGEMENE LAY-OUT (font-size, margins, etc etc) AANPASSEN */
-    
-    .wrapper{
+    .wrapper {
         margin-top: 1.8em;
     }
-    
-    h1{
+    h1 {
         font-size: 1.8em;
     }
-    
-    h2{
+    h2 {
         font-size: 1.5em;
     }
-    
-    h3{
+    h3 {
         font-size: 1.3em;
     }
-    
-    h4{
+    h4 {
         font-size: 1.2em;
     }
-    
-    p, figcaption{
+    p,
+    figcaption {
         font-size: 1.05em;
     }
-    
-    article li, section li{
-    font-size: 1.05em;
-    padding: 0.3em 0.7em;
+    article li,
+    section li {
+        font-size: 1.05em;
+        padding: 0.3em 0.7em;
     }
-    
-    nav li{
+    nav li {
         font-size: 1.05em;
     }
-    
-    footer p{
+    footer p {
         font-size: 0.95em;
     }
-    
-    figure{
+    figure {
         margin-right: 0.7em;
     }
-    
-    #over-mij{
+    #over-mij {
         margin-top: 0.5em;
     }
-    
-    .text-articles{
+    #werk {
+        margin-top: 0.5em;
+    }
+    .text-articles {
         margin-right: 0.5em;
     }
-    
-    .cv{
+    .cv {
         width: 100%;
     }
-    
-    
-    
-    
-    
     /* 3.2 FLOATINSTELLINGEN */
-    
-    .wrapper{
+    .wrapper {
         overflow: auto;
         width: 100%;
         min-height: 300px;
     }
-    
-    .index{
+    .index {
         position: relative;
         top: -20px;
     }
-    
-    aside{
+    aside {
         float: left;
-        width: 32%;
+        width: 15%;
         overflow: visible;
     }
-    
-    aside h2, aside p{
+    aside h2,
+    aside p {
         margin-left: 10px;
     }
-    
-    section{
+    section {
         float: left;
-        width: 68%;
+        width: 85%;
     }
-    
-    footer{
+    footer {
         clear: both;
     }
-    
     /* 3.3 CONTACTFORMULIER */
-    
-    .invoer{
+    .invoer {
         padding: 0.7em;
     }
-    
-    input#submit{
+    input#submit {
         font-size: 1.2em;
     }
 }
@@ -368,132 +380,97 @@ nav:hover ul{
 
 /* 4. DESKTOP */
 
-@media screen and (min-width: 992px){
-    
+@media screen and (min-width: 992px) {
     /* 4.1 ALGEMENE LAY-OUT (font-size, margins, etc etc) AANPASSEN */
-    
-    .wrapper{
-        margin: 1.8em 1em 0 1em;;
+    .wrapper {
+        margin: 1.8em 1em 0 1em;
+        ;
     }
-    
-    h1{
+    h1 {
         font-size: 2em;
     }
-    
-    h2{
+    h2 {
         font-size: 1.7em;
-        
     }
-    
-     h3{
+    h3 {
         font-size: 1.5em;
     }
-    
-    h4{
+    h4 {
         font-size: 1.3em;
     }
-
-    
-    p, figcaption{
+    p,
+    figcaption {
         font-size: 1.1em;
     }
-    
-    p b{
+    p b {
         font-weight: 600;
     }
-    
-    nav li{
+    nav li {
         font-size: 1.1em;
     }
-    
     article li,
-    section li{
-    font-size: 1.1em;
+    section li {
+        font-size: 1.1em;
     }
-    
-    footer p{
+    footer p {
         font-size: 1em;
     }
-    
-    aside{
+    aside {
         margin-right: 0 1em;
     }
-    
     /* 4.2 NAV AANPASSEN */
-    
-    nav{
+    nav {
         text-align: center;
     }
-    
-    #menu{
+    #menu {
         display: none;
     }
-    
-    nav ul{
+    nav ul {
         display: block;
         margin: 0.1em auto;
     }
-    
-    nav li{
+    nav li {
         display: inline-block;
         padding: 0.7em 0.9em;
         border: 1px black solid;
         margin: 0.2em 0;
         border-radius: 4px;
     }
-    
-    
     /* 4.3 ALLE ARTIKELS OP PAGINA (index-pagina) */
-    
-    #hobby, #contact{
-        display:block;
+    #hobby,
+    #contact {
+        display: block;
     }
-    
     #hobby p.text-articles,
-    #contact p.text-articles{
+    #contact p.text-articles {
         display: none;
     }
-    
     #hobby:hover p.text-articles,
-    #contact:hover p.text-articles{
+    #contact:hover p.text-articles {
         display: block;
         margin-bottom: -5.17em;
     }
-    
     /* 4.4 FORMULIER */
-    
-    .invoer{
+    .invoer {
         width: 90%;
     }
-    
-    textarea{
+    textarea {
         min-height: 200px;
     }
-    
-    
     /* 4.5 FLOATINSTELLINGEN AANPASSEN */
-    
-    section{
-        width: 70%;
+    section {
+        width: 80%;
         float: left;
     }
-    
-    article{
+    article {
         width: 50%;
         float: left;
     }
-    
-    .kolom1{
+    .kolom1 {
         width: 100%;
     }
-    
-    aside{
+    aside {
         float: left;
-        width: 25%;
-    }  
-   
+        width: 20%;
+    }
 }
-    
-
-
-
