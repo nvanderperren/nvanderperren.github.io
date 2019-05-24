@@ -5,7 +5,7 @@ start met algemene opmaak van headers etc. */
 /* 1. ALGEMENE INSTELLINGEN */
 
 * {
-    font-family: 'Titillium Web', Verdana, Courier, sans-serif;
+    font-family: Verdana, Courier, sans-serif;
 }
 
 header,
@@ -27,7 +27,8 @@ body {
     margin: 0 auto;
     background-color: #fff;
     line-height 1.2;
-    color: #333300;
+    color: black;
+    font-size: small;
 }
 
 .page {
@@ -166,10 +167,6 @@ a:hover {
     color: darkorange;
 }
 
-img {
-    max-width: 100%;
-}
-
 footer {
     background-image: url("../images/menu_background/green_cup.png");
     margin: 1em -1em -1em;
@@ -181,6 +178,25 @@ footer p {
     margin-top: 1em;
     clear: both;
     font-size: 0.9em;
+}
+
+footer img {
+    width: 20px;
+    height: auto
+}
+
+section h3 {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    margin: auto;
 }
 
 
@@ -273,16 +289,8 @@ input[submit]:focus {
     margin-right: 1em;
 }
 
-#hobby-sectie h3 {
-    display: block
-}
-
 
 /* 1.5 REALISATIES */
-
-.kolom1 h3 {
-    display: block
-}
 
 
 /* 2. MOBIEL */
