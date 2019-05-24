@@ -181,7 +181,7 @@ footer p {
 }
 
 footer img {
-    width: 20px;
+    width: 30px;
     height: auto
 }
 
@@ -193,11 +193,6 @@ img {
     max-width: 100%;
 }
 
-#footer {
-    clear: both;
-    text-align: center;
-    margin: auto;
-}
 
 
 /* 1.1 INDEX-PAGINA/
