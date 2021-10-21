@@ -1,0 +1,213 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Vechtende mannen / Men Fighting"
+    ],
+    "nl": [
+      "Vechtende mannen / Men Fighting"
+    ]
+  },
+  "items": [
+    {
+      "label": {
+        "en": [
+          "20843001"
+        ],
+        "nl": [
+          "20843001"
+        ]
+      },
+      "height": 1000,
+      "width": 1000,
+      "type": "Canvas",
+      "items": [
+        {
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "type": "Annotation",
+              "body": {
+                "type": "Image",
+                "id": "https://images-tst.meemoo.be/iiif/dr2p57529r.jp2/full/full/0/default.jpg",
+                "width": 3750,
+                "height": 5000
+              },
+              "target": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/4d77c59b-8a07-5acf-20c4-532166c46c37#xywh=0,0,750,1000",
+              "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/annotation/17134778-a808-f3ae-c5ea-41719a556f2e",
+              "motivation": "painting"
+            }
+          ],
+          "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/list/1c9dc91a-825f-4652-eb3d-d7bc60826280"
+        }
+      ],
+      "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/4d77c59b-8a07-5acf-20c4-532166c46c37"
+    },
+    {
+      "label": {
+        "en": [
+          "20843002"
+        ],
+        "nl": [
+          "20843002"
+        ]
+      },
+      "height": 1000,
+      "width": 1000,
+      "type": "Canvas",
+      "items": [
+        {
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "type": "Annotation",
+              "body": {
+                "type": "Image",
+                "id": "https://images-tst.meemoo.be/iiif/p843r2fm4m.jp2/full/full/0/default.jpg",
+                "width": 3750,
+                "height": 5000
+              },
+              "target": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/ce554a89-7d38-0f11-2367-3e2a8c7c02e8#xywh=0,0,750,1000",
+              "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/annotation/c813b673-86e2-5ca9-0290-40bcebd04f49",
+              "motivation": "painting"
+            }
+          ],
+          "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/list/7eb6e3ec-67da-d6d1-5d6c-f5b1e552657b"
+        }
+      ],
+      "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/ce554a89-7d38-0f11-2367-3e2a8c7c02e8"
+    },
+    {
+      "label": {
+        "en": [
+          "20843003"
+        ],
+        "nl": [
+          "20843003"
+        ]
+      },
+      "height": 1000,
+      "width": 1000,
+      "type": "Canvas",
+      "items": [
+        {
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "type": "Annotation",
+              "body": {
+                "type": "Image",
+                "id": "https://images-tst.meemoo.be/iiif/wp9t16kg44.jp2/full/full/0/default.jpg",
+                "width": 3750,
+                "height": 5000
+              },
+              "target": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/5c03d26e-d3e8-fd9f-109a-741d567aab12#xywh=0,0,750,1000",
+              "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/annotation/dc8e2c3b-8bfc-889d-ca85-49e4445d7e42",
+              "motivation": "painting"
+            }
+          ],
+          "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/list/c4cbcc6b-27b0-458b-a39d-d83ac1a9d3fe"
+        }
+      ],
+      "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/5c03d26e-d3e8-fd9f-109a-741d567aab12"
+    }
+  ],
+  "id": "https://nvanderperren.github.io/iiif/manifest82d3.json",
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "metadata": [
+    {
+      "value": {
+        "en": [
+          "Men Fighting"
+        ],
+        "nl": [
+          "Vechtende mannen"
+        ]
+      },
+      "label": {
+        "en": [
+          "Title"
+        ],
+        "nl": [
+          "Titel"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Artist"
+        ],
+        "nl": [
+          "Artiest"
+        ]
+      },
+      "value": {
+        "en": [
+          "George Minne"
+        ],
+        "nl": [
+          "George Minne"
+        ]
+      }
+    },
+    {
+      "value": {
+        "en": [
+          "± 1886 - 19de eeuw"
+        ],
+        "nl": [
+          "± 1886 - 19de eeuw"
+        ]
+      },
+      "label": {
+        "en": [
+          "Period"
+        ],
+        "nl": [
+          "Periode"
+        ]
+      }
+    },
+    {
+      "value": {
+        "en": [
+          "https://arthub.iiif.vlaamsekunstcollectie.be/nl/catalog/mskgent:1982-N"
+        ],
+        "nl": [
+          "https://arthub.iiif.vlaamsekunstcollectie.be/nl/catalog/mskgent:1982-N"
+        ]
+      },
+      "label": {
+        "en": [
+          "seeAlso"
+        ],
+        "nl": [
+          "seeAlso"
+        ]
+      }
+    }
+  ],
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Collection:"
+      ],
+      "nl": [
+        "Collectie:"
+      ]
+    },
+    "value": {
+      "en": [
+        "Museum of Fine Arts Ghent"
+      ],
+      "nl": [
+        "Museum voor Schone Kunsten Gent"
+      ]
+    }
+  }
+}
