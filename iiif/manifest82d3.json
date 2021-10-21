@@ -37,7 +37,7 @@
                 "width": 3750,
                 "height": 5000
               },
-              "target": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/4d77c59b-8a07-5acf-20c4-532166c46c37#xywh=0,0,750,1000",
+              "target": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/4d77c59b-8a07-5acf-20c4-532166c46c37",
               "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/annotation/17134778-a808-f3ae-c5ea-41719a556f2e",
               "motivation": "painting"
             }
@@ -71,7 +71,7 @@
                 "width": 3750,
                 "height": 5000
               },
-              "target": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/ce554a89-7d38-0f11-2367-3e2a8c7c02e8#xywh=0,0,750,1000",
+              "target": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/ce554a89-7d38-0f11-2367-3e2a8c7c02e8",
               "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/annotation/c813b673-86e2-5ca9-0290-40bcebd04f49",
               "motivation": "painting"
             }
@@ -105,7 +105,7 @@
                 "width": 3750,
                 "height": 5000
               },
-              "target": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/5c03d26e-d3e8-fd9f-109a-741d567aab12#xywh=0,0,750,1000",
+              "target": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/canvas/5c03d26e-d3e8-fd9f-109a-741d567aab12",
               "id": "http://digirati.com/iiif/v3/b1d37f7d-47fe-aade-0f62-064f8fe16115/annotation/dc8e2c3b-8bfc-889d-ca85-49e4445d7e42",
               "motivation": "painting"
             }
