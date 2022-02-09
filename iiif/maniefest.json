@@ -23,7 +23,7 @@
           "width": 6215,
           "images": [
             {
-              "@id": "{{ '/' | absolute_url }}manifests/416sx7vq3v.jp2/annotation/1.json",
+              "@id": "https://nvanderperren.github.io/iiif/maniefest/annotation/1.json",
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
@@ -43,7 +43,7 @@
           ],
           "otherContent": [
             {
-              "@id": "https://nvanderperren.github.io/annonatate/annotations/416sx7vq3v-jp2-list.json",
+              "@id": "https://nvanderperren.github.io/annonatate/annotations/6fbddd5b-bb97-459d-9234-af912fe1c89b-list.json",
               "@type": "sc:AnnotationList",
               "label": ""
             }
