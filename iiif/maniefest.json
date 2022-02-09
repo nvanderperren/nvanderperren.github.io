@@ -40,13 +40,6 @@
               },
               "on": "https://images-tst.meemoo.be/iiif/416sx7vq3v.jp2/info.json"
             }
-          ],
-          "otherContent": [
-            {
-              "@id": "https://nvanderperren.github.io/annonatate/annotations/6fbddd5b-bb97-459d-9234-af912fe1c89b-list.json",
-              "@type": "sc:AnnotationList",
-              "label": ""
-            }
           ]
         }
       ]
