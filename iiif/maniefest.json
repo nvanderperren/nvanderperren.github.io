@@ -1,0 +1,55 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://nvanderperren.github.io/iiif/maniefest.json",
+  "@type": "sc:Manifest",
+  "label": "Mensen",
+  "metadata": [
+    {
+      "label": "rights",
+      "value": ""
+    }
+  ],
+  "description": "Dit zijn mensen",
+  "viewingDirection": "left-to-right",
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://images-tst.meemoo.be/iiif/416sx7vq3v.jp2/info.json",
+          "@type": "sc:Canvas",
+          "label": "Mensen",
+          "height": 4911,
+          "width": 6215,
+          "images": [
+            {
+              "@id": "{{ '/' | absolute_url }}manifests/416sx7vq3v.jp2/annotation/1.json",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://images-tst.meemoo.be/iiif/416sx7vq3v.jp2/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 4911,
+                "width": 6215,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://images-tst.meemoo.be/iiif/416sx7vq3v.jp2",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                }
+              },
+              "on": "https://images-tst.meemoo.be/iiif/416sx7vq3v.jp2/info.json"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "https://nvanderperren.github.io/annonatate/annotations/416sx7vq3v-jp2-list.json",
+              "@type": "sc:AnnotationList",
+              "label": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
