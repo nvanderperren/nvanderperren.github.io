@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=nl>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta charset="utf-8">
+    <meta name="author" content="Nastasia Vanderperren">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js" />
+    <title>Mirador demo</title>
+</head>
+<body>
+    <div id="mirador" />
+    <script type="text/javascript">
+        var mirador = window.Mirador({
+            "id": "my-mirador",
+            "manifests": {
+                "https://iiif.lib.harvard.edu/manifests/drs:48309543": {
+                    "provider": "Harvard University"
+                }
+            },
+            "windows": [
+                {
+                    "loadedManifest": "https://iiif.lib.harvard.edu/manifests/drs:48309543",
+                    "canvasIndex": 2,
+                    "thumbnailNavigationPosition": "far-bottom"
+                }
+            ]
+        });
+
+    </script>
+</body>
