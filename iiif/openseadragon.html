@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta charset="utf-8">
+    <meta name="author" content="Nastasia Vanderperren">
+    <title>Openseadragon curtainview</title>
+</head>
+<body>
+    <style type="text/css">.very-custom-class{
+        margin: 0;
+        width: 100%;
+        height: 90vh;
+        padding: 10px;
+        background-color: black;
+        font-family: Arial, sans-serif;
+      }
+      
+      .very-custom-class .btn {
+        background: gainsboro;
+        border: none;
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+        padding: 8px 12px;
+        border-radius: 2px;
+        margin-right: 2px;
+      }
+      
+      .very-custom-class nav div {
+        margin-bottom: 24px;
+        width: 30%;
+        display: inline-block;
+      }
+      
+      .very-custom-class nav span {
+        display: block;
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      
+      .very-custom-class #viewer {
+        height: 70vh;
+      }
+      
+      .very-custom-class .view-trigger.active,
+      .very-custom-class .mode-trigger.active {
+        background-color: darkslateblue;
+        color: white;
+      }
+      
+      .very-custom-class .copyright {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        color: white;
+        font-size: 10px;
+      }
+      </style>
+      <div class="very-custom-class">
+      <nav><!-- Zoom controls -->
+      <div><span>Zoom</span><button class="btn zoom-trigger" data-type="in" title="Zoom In">Zoom In</button><button class="btn zoom-trigger" data-type="out" title="Zoom Out">Zoom Out</button></div>
+      <!-- Type controls -->
+      
+      <div><span>Views</span><button class="btn view-trigger active" data-type="vis" title="Visible">Visible</button><button class="btn view-trigger active" data-type="irr" title="Infrared">Infra-red</button><button class="btn view-trigger" data-type="uv" title="Infrared">UV</button><button class="btn view-trigger active" data-type="xray" title="Infrared">X-ray</button></div>
+      <!-- Mode toggles -->
+      
+      <div><span>Modes</span><button class="btn active mode-trigger mode-curtain" data-mode="curtain" title="Curtain Mode">Curtain</button><button class="btn mode-trigger mode-syncs" data-mode="sync" title="Sync Mode">Sync</button></div>
+      </nav>
+      <!-- Viewer Element -->
+      
+      <div id="viewer">&nbsp;</div>
+      <!-- OpenSeadragon from CDN and Plugin --><script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/openseadragon.min.js"></script><script src="https://github.com/AlecVandenbroeck/MultilayerViewer/releases/download/test/openseadragon-curtain-sync.min.js"></script><!-- Demo Specific Scripts --><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><script>
+              var myViewer = {
+      
+        /**
+         * Init method.
+         */
+        init: function() {
+      
+          this.initViewActions();
+          this.initModeActions();
+          this.initZoomActions();
+      
+        },
+      
+        /**
+         * View Actions.
+         */
+        initViewActions: function() {
+      
+          // add click event to switch views
+          $('.view-trigger').on('click', function (e) {
+            var thisView = $(this),
+              isMobile = (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1);
+      
+            e.preventDefault();
+            thisView.toggleClass('active');
+            viewer.setImageShown(thisView.data('type'), thisView.hasClass('active'));
+      
+            // need this to initiate curtain view on mobile
+            if (isMobile) {
+              var thisZoom = viewer.getZoom();
+              viewer.setZoom(thisZoom + 0.000000000001);
+            }
+      
+          });
+      
+        },
+      
+        /**
+         * Mode actions.
+         */
+        initModeActions: function() {
+      
+          // click event to trigger mode change
+          $('.mode-trigger').on('click', function (e) {
+            var thisMode = $(this);
+            e.preventDefault();
+      
+            if ($(window).width() < 768) {
+              alert("Modes are not available on small screens. Please view on a larger screen to access modes.");
+              return false;
+            }
+      
+            $('.mode-trigger').removeClass('active');
+            thisMode.addClass('active');
+            viewer.setMode(thisMode.data('mode'));
+      
+          });
+      
+        },
+      
+        /**
+         * Zoom actions.
+         */
+        initZoomActions: function() {
+      
+          // click event to zoom in/out
+          $('.zoom-trigger').on('click', function () {
+            var thisZoom = $(this);
+      
+            if (thisZoom.data('type') === 'in') {
+              viewer.zoomIn();
+            } else {
+              viewer.zoomOut();
+            }
+          });
+      
+        }
+      
+      }
+      
+      /**
+       * Run functions on doc ready.
+       */
+      $(document).ready(function(){
+        myViewer.init();
+      });
+          </script><!-- Initialize Viewer --><script type="text/javascript">
+      
+            var viewer = new CurtainSyncViewer({
+              container: document.querySelector('#viewer'),
+              images: [
+                  {
+                    key: 'vis',
+                    tileSource: 'https://imagehub.dev.vlaamsekunstcollectie.be/iiif/2/public%2F87.tif/info.json',
+                    shown: true
+                  },
+                  {
+                    key: 'irr',
+                    tileSource: 'https://imagehub.dev.vlaamsekunstcollectie.be/iiif/2/public%2F17.tif/info.json',
+                    shown: true
+                  },
+                  {
+                    key: 'xray',
+                    tileSource: 'https://imagehub.dev.vlaamsekunstcollectie.be/iiif/2/public%2F85.tif/info.json',
+                    shown: true
+                  },
+                  {
+                    key: 'uv',
+                    tileSource: 'https://imagehub.dev.vlaamsekunstcollectie.be/iiif/2/public%2F86.tif/info.json',
+                    shown: false
+                  }
+                ],
+            });
+          </script>      
+</body>
+</html>
